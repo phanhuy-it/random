@@ -1,0 +1,228 @@
+.draw-control {
+    width: 470px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.upload-btn button {
+    font-size: 14px;
+    text-align: center;
+    min-width: 130px;
+    background: #169BD5;
+    border-color: #169BD5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.custom-file-label {
+    border: none !important;
+    cursor: pointer;
+    z-index: 3;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.custom-file-label::after {
+    content: "Select theme";
+    text-align: center;
+    width: 130px;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: solid 1px #333;
+    border-radius: 3px;
+}
+
+.custom-file-label:hover:after {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+#draw-screen #main {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+
+#number-result {
+    font-size: 130px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000;
+}
+
+#name-result {
+    font-size: 14vmin;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000,
+                 0px 0px 1px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vmin;
+}
+
+#name-result .satulation {
+    font-size: 60%;
+    font-weight: 400;
+    display: block;
+}
+
+#name-result .position {
+    font-size: 70%;
+    font-weight: 400;
+    display: block;
+}
+
+.buttons {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.buttons li {
+    list-style: none;
+}
+
+.buttons li button {
+    width: 200px;
+    background: #fff !important;
+    color: #000 !important;
+    border-radius: 0px;
+    border: solid 1px #fff !important;
+    box-shadow: none !important;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 0.5rem 0.5rem;
+    border: solid 1px !important;
+}
+
+.buttons li button:hover {
+    opacity: 0.8;
+}
+
+#stop-btn {
+    display: none;
+}
+
+#image-preview {
+    text-align: center;
+}
+
+#image-preview img {
+    display: none;
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 100px;
+}
+
+#player {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.8s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+body {
+    background: #fff;
+}
+
+#draw-screen {
+    background: #000;
+}
+
+#text-color,
+#text-stroke {
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+#textColor,
+#textStroke {
+    box-shadow: none !important;
+}
+
+.list-button-control {
+    justify-content: center;
+}
+
+.list-button-control li {
+    list-style-type: none;
+    list-style: none;
+    margin: 10px;
+}
+
+.list-button-control li a {
+    min-width: 300px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
